@@ -1,6 +1,6 @@
 # cpp_template
 
-C++17 project template that uses **Zig** as the build system. Zig handles compilation, linking against libc/libc++, and generating `compile_commands.json` for editor LSP support.
+C++23 project template that uses **Zig** as the build system. Zig handles compilation, linking against libc/libc++, and generating `compile_commands.json` for editor LSP support.
 
 ## Prerequisites
 
