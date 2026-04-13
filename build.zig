@@ -7,7 +7,7 @@ pub fn build(b: *std.Build) void {
     const sanitize = b.option(std.zig.SanitizeC, "sanitize", "Enable c/c++ sanitizer");
 
     const cflags: []const []const u8 = &.{
-        "-std=c++17",
+        "-std=c++23",
         "-Wall",
         "-Wextra",
         "-Wpedantic",
@@ -94,7 +94,7 @@ pub fn build(b: *std.Build) void {
             \\  {{
             \\    "directory": ".",
             \\    "file": "{s}",
-            \\    "arguments": ["clang++", "-std=c++17", "-Wall", "-Wextra", "-Wpedantic", "-Iinclude", "{s}"]
+            \\    "arguments": ["clang++", "-std=c++23", "-Wall", "-Wextra", "-Wpedantic", "-Iinclude", "{s}"]
             \\  }}
         , .{ file, file }) catch @panic("OOM");
     }
