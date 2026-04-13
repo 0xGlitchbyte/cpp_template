@@ -1,0 +1,17 @@
+# Zig
+.zig-cache/
+zig-out/
+
+# C++ build
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+
+# Editor/OS
+.DS_Store
+*.swp
+compile_commands.json
